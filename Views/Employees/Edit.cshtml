@@ -1,0 +1,64 @@
+﻿@model Lab6.DataAccess.Employee
+@using Lab6.DataAccess
+
+@{
+    ViewData["Title"] = "Edit";
+    var availableRoles = ViewData["AvailableRoles"] as List<Role>;
+}
+
+<h1>Edit</h1>
+
+<h4>Employee</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="UserName" class="control-label"></label>
+                <input asp-for="UserName" class="form-control" />
+                <span asp-validation-for="UserName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Password" class="control-label"></label>
+                <input asp-for="Password" class="form-control" />
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+            <label>Roles</label>
+                    @foreach (var role in availableRoles)
+                {
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" name="SelectedRoles" value="@role.Id" />
+                            @role.Role1
+
+                        </label>
+                    </div>
+                }
+                @if (ViewData.ModelState["Roles"]?.Errors.Count > 0)
+                {
+                    <span class="text-danger">@ViewData.ModelState["Roles"].Errors[0].ErrorMessage</span>
+                }
+                
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

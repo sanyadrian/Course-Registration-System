@@ -1,0 +1,86 @@
+@model IEnumerable<Lab6.DataAccess.AcademicRecord>
+
+@{
+    var academicRecordsList = Model.ToList();
+    ViewData["Title"] = "EditAll";
+}
+
+<h1>Index</h1>
+
+<form asp-action="EditAll" method="post">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    <a asp-action="EditAll" asp-route-sortOrder="@ViewBag.CourseSort"> @Html.DisplayNameFor(model => model.CourseCodeNavigation.Title) </a>
+                </th>
+                <th>
+                    <a asp-action="EditAll" asp-route-sortOrder="@ViewBag.NameSort"> @Html.DisplayNameFor(model => model.Student.Name) </a>
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Grade)
+                </th>
+                <th>
+                    Error
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @for (int i = 0; i < academicRecordsList.Count; i++) {
+                <tr>
+                    <td>
+                        @* <input type="hidden" asp-for="@academicRecordsList[i].CourseCode" /> *@
+                        <input type="hidden" name="academicRecords[@i].CourseCode" value="@academicRecordsList[i].CourseCode" />
+                        @Html.DisplayFor(m => academicRecordsList[i].CourseCodeNavigation.Code) - @Html.DisplayFor(m => academicRecordsList[i].CourseCodeNavigation.Title)
+                    </td>
+                    <td>
+                        @* <input type="hidden" asp-for="@academicRecordsList[i].StudentId" /> *@
+                        <input type="hidden" name="academicRecords[@i].StudentId" value="@academicRecordsList[i].StudentId" />
+                        @Html.DisplayFor(m => academicRecordsList[i].Student.Id) - @Html.DisplayFor(m => academicRecordsList[i].Student.Name)
+                    </td>
+                    <td>
+                        @* <input asp-for="@academicRecordsList[i].Grade" class="form-control" /> *@
+                        <input type="text" name="academicRecords[@i].Grade" value="@academicRecordsList[i].Grade" />
+                        <span id="validationForGrade_@i" class="text-danger"></span>
+
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <div class="form-group">
+        <input type="submit" value="Save" class="btn btn-primary" />
+    </div>
+</form>
+
+@section Scripts {
+    <script>
+    $(document).ready(function() {
+        $('form').on('submit', function() {
+            var isValid = true;
+            $('input[name^="academicRecords["]').each(function() {
+                var index = $(this).attr('name').match(/\[(\d+)\]/)[1];
+                var grade = $(this).val();
+
+                if (isNaN(grade)) {
+                    $('#validationForGrade_' + index).text('Must be between 0 and 100');
+                    isValid = false;
+                }
+                else {
+                    grade = parseFloat(grade);
+                    if (grade < 0 || grade > 100) {
+                        $('#validationForGrade_' + index).text('Must be between 0 and 100');
+                        isValid = false;
+                    } else {
+                        $('#validationForGrade_' + index).text('');
+                    }
+                }
+            });
+            return isValid;
+        });
+    });
+    </script>
+}
+
+
+

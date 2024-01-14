@@ -1,0 +1,93 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Lab6
+build_property.RootNamespace = Lab6
+build_property.ProjectDir = /Users/oleksandradrianov/Desktop/Web Programming II/Lab1/CourseRegistration/
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = /Users/oleksandradrianov/Desktop/Web Programming II/Lab1/CourseRegistration
+build_property._RazorSourceGeneratorDebug = 
+
+[/Users/oleksandradrianov/Desktop/Web Programming II/Lab1/CourseRegistration/Views/AcademicRecords/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWNhZGVtaWNSZWNvcmRzL0NyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/oleksandradrianov/Desktop/Web Programming II/Lab1/CourseRegistration/Views/AcademicRecords/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWNhZGVtaWNSZWNvcmRzL0VkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/oleksandradrianov/Desktop/Web Programming II/Lab1/CourseRegistration/Views/AcademicRecords/EditAll.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWNhZGVtaWNSZWNvcmRzL0VkaXRBbGwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/oleksandradrianov/Desktop/Web Programming II/Lab1/CourseRegistration/Views/AcademicRecords/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWNhZGVtaWNSZWNvcmRzL0luZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/oleksandradrianov/Desktop/Web Programming II/Lab1/CourseRegistration/Views/Courses/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ291cnNlcy9DcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/oleksandradrianov/Desktop/Web Programming II/Lab1/CourseRegistration/Views/Courses/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ291cnNlcy9EZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/oleksandradrianov/Desktop/Web Programming II/Lab1/CourseRegistration/Views/Courses/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ291cnNlcy9EZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/oleksandradrianov/Desktop/Web Programming II/Lab1/CourseRegistration/Views/Courses/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ291cnNlcy9FZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/oleksandradrianov/Desktop/Web Programming II/Lab1/CourseRegistration/Views/Courses/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ291cnNlcy9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/oleksandradrianov/Desktop/Web Programming II/Lab1/CourseRegistration/Views/Employees/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRW1wbG95ZWVzL0NyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/oleksandradrianov/Desktop/Web Programming II/Lab1/CourseRegistration/Views/Employees/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRW1wbG95ZWVzL0VkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/oleksandradrianov/Desktop/Web Programming II/Lab1/CourseRegistration/Views/Employees/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRW1wbG95ZWVzL0luZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/oleksandradrianov/Desktop/Web Programming II/Lab1/CourseRegistration/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/oleksandradrianov/Desktop/Web Programming II/Lab1/CourseRegistration/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/oleksandradrianov/Desktop/Web Programming II/Lab1/CourseRegistration/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/oleksandradrianov/Desktop/Web Programming II/Lab1/CourseRegistration/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/oleksandradrianov/Desktop/Web Programming II/Lab1/CourseRegistration/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/oleksandradrianov/Desktop/Web Programming II/Lab1/CourseRegistration/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/oleksandradrianov/Desktop/Web Programming II/Lab1/CourseRegistration/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-x6fr5ea9zx
